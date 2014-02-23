@@ -66,28 +66,28 @@ module.exports = function(grunt) {
         files: ['tasks/**/*.js', 'test/**/*.js'],
         tasks: ['shell:debug'],
       },
+    },
 
-      shell: {
-        debug: {
-          options: {
-            stdout: true
-          },
-          command: 'node --debug-brk $(which grunt) test'
-        }
-      },
-   
-      // run node-inspector and unit tests concurrently
-      'node-inspector':{
-        default: {}
-      },
-
-      concurrent: {
-        test: ['node-inspector', 'shell:debug', 'delta:debug'],
+    shell: {
+      debug: {
         options: {
-          logConcurrentOutput: true
-        }
+          stdout: true
+        },
+        command: 'node --debug-brk $(which grunt) test'
       }
     },
+ 
+    // run node-inspector and unit tests concurrently
+    'node-inspector':{
+      default: {}
+    },
+
+    concurrent: {
+      test: ['node-inspector', 'shell:debug', 'delta:debug'],
+      options: {
+        logConcurrentOutput: true
+      }
+    }
   });
 
   // Actually load this plugin's task(s).
