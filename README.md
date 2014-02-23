@@ -1,9 +1,10 @@
 # grunt-init-gruntplugin-ci
-Based on [gruntjs/grunt-init-gruntplugin][https://github.com/gruntjs/grunt-init-gruntplugin]
+Based on [gruntjs/grunt-init-gruntplugin][]
 
 > Create a gruntplugin module with [grunt-init][], including Nodeunit unit tests, continuous testing (watch) and integrated debugging (node-inspector)
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
+[gruntjs/grunt-init-gruntplugin]: https://github.com/gruntjs/grunt-init-gruntplugin
 
 ## Installation
 If you haven't already done so, install [grunt-init][].
