@@ -1,4 +1,5 @@
 # grunt-init-gruntplugin-ci
+Based on [gruntjs/grunt-init-gruntplugin][https://github.com/gruntjs/grunt-init-gruntplugin]
 
 > Create a gruntplugin module with [grunt-init][], including Nodeunit unit tests, continuous testing (watch) and integrated debugging (node-inspector)
 
@@ -12,7 +13,7 @@ directory. It's recommended that you use git to clone this template into that
 directory, as follows:
 
 ```
-git clone https://github.com/gruntjs/grunt-init-gruntplugin-ci.git ~/.grunt-init/gruntplugin-ci
+git clone https://github.com/philtoms/grunt-init-gruntplugin-ci.git ~/.grunt-init/gruntplugin-ci
 ```
 
 _(Windows users, see [the documentation][grunt-init] for the correct
